@@ -1,0 +1,116 @@
+#stack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3.125rem;
+}
+
+.container-titulos-stack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3.125rem 0 1.875rem;
+    margin-bottom: -1.25rem;
+}
+
+.stack-svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: var(--cor-destaque); 
+    margin-right: 0.3125rem;
+}
+
+.container-titulos-stack .subtitulo-stack {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--cor-borda);
+}
+
+.container-titulos-stack .subtitulo-stack > i {
+    color: var(--cor-destaque);
+}
+
+.container-titulos-stack .titulo-stack {
+    font-size: 2.1rem;
+    letter-spacing: 0.081rem;
+    color: var(--cor-fundo-header);
+    margin-bottom: 0.75rem;
+}
+
+.container-titulos-stack .descricao-stack {
+    font-weight: 500;
+    color: var(--cor-borda);
+    font-size: 1rem;    
+}
+
+.container-stacks {
+    border: 0.0625rem solid var(--cor-borda);
+    display: flex;
+    align-items: center;    
+    gap: 3.75rem;
+    border-radius: 1.5625rem;
+    width: 100%;
+}
+
+.info-stack {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 45%;
+    padding: 3%;
+    border-radius: 1.5625rem;
+    gap: 1.25rem;
+    color: var(--cor-texto-header);
+}
+
+.stack-frontend {
+    background-color: var(--cor-destaque);
+}
+
+.stack-backend {
+    background-color: var(--cor-destaque-hover);
+}
+
+.stack-ferramentas {
+    background-color: var(--cor-fundo-header);
+}
+
+.info-stack .icone-categoria {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 3rem;
+    fill: var(--cor-texto-header);
+}
+
+.icones-stacks {
+    display: flex;
+    align-items: center;    
+    gap: 1.25rem;
+}
+
+.icones-stacks .icone-nome {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--cor-fundo-header);
+    font-weight: 500;
+    gap: 0.3125rem;
+    border: 0.125rem solid var(--cor-destaque);
+    padding: 0.9375rem;
+    border-radius: 0.9375rem;
+}
+
+.icone-nome img {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+}

@@ -1,0 +1,141 @@
+header {
+    display: flex;
+    background-color: var(--cor-fundo-header);
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem 4rem;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.logo #logotipo {
+    color: var(--cor-texto-header);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+.logo #logotipo:hover {
+    color: var(--cor-destaque);
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+}
+
+.nav-link {
+    font-size: 1.05rem;
+    color: var(--cor-texto-header);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--cor-destaque);
+}
+
+.contato-link {
+    display: none;
+}
+
+.cabecalho-btns {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.contato-btn {
+    color: var(--cor-texto-header);
+    background-color: var(--cor-destaque);
+    border-radius: 3.2rem;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+}
+
+.contato-btn:hover {
+    background-color: var(--cor-destaque-hover);
+    transform: translateY(-0.125rem); 
+}
+
+.modo-escuro-claro {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--cor-texto-header);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.0625rem solid var(--cor-texto-header);
+    border-radius: 3.2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.modo-escuro-claro .page-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--cor-borda);
+}
+
+.modo-escuro-claro:hover {
+    color: var(--cor-destaque); 
+}
+
+/* Responsividade */
+
+.menu-hamburguer {
+    display: none;    
+    align-items: center;
+    justify-content: center;    
+    outline: none;
+    border: none;
+    background-color: transparent;         
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    border-radius: 3.2rem;
+}
+
+.menu-icon {
+    fill: var(--cor-texto-header);
+    vertical-align: middle;    
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+@media (max-width: 1050px) {
+    header {
+        padding: 0.5rem 2rem;
+    }
+
+    .logo #logotipo {
+        font-size: 1.2rem;        
+        z-index: 1001; 
+    }
+
+    .contato-link {
+        display: block;
+    }
+
+    .contato-btn {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: flex;        
+        z-index: 1200; /* Garante que o botão hambúrguer fique clicável por cima do menu lateral */
+    }
+
+    .menu-horizontal {
+        display: none;
+    }
+}
