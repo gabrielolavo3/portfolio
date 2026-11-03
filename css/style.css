@@ -1,4 +1,4 @@
-/* Importa os arquivos necessários de estilização */
+/* Importa os ficheiros necessários de estilização */
 
 @import 'variables.css';
 @import 'header.css';
@@ -18,13 +18,19 @@
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body {
-    width: 100vw;
+    max-width: 100%;
+    min-height: 100%;    
 }
 
 section {

@@ -86,3 +86,26 @@ form button {
 form button:hover {
     background-color: var(--cor-destaque);
 }
+
+@media (max-width: 1100px) {
+    #contato {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .container-contato {
+        width: 100%;
+    }
+
+    br {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+        width: 100%;
+    }
+}
