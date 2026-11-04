@@ -47,8 +47,9 @@ footer a:hover {
         gap: 10px;
     }
 
-    .footer-titulo, .copyright {
-        font-size: 1rem;
+    .footer-titulo, .copyright {        
+        font-size: 0.9rem;
+        text-align: center;
     }
 
     footer a {

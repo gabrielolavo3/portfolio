@@ -94,37 +94,10 @@
         width: 50%;
     }
 
-    .saudacao {
-        font-size: 1.18rem;
-    }
-
-    .nome {
-        font-size: 3rem;
-    }
-
-    .cargo {
-        font-size: 1.20rem;
-    }
-
-    .descricao {
-        font-size: 1.18rem;
-    }
-
     .conteudo-inicio {                
         text-align: center;    
         flex-direction: column; 
         gap: 40px; 
-    }
-
-    .icone-social {
-        border-radius: 3.2rem;
-        width: 3rem;
-        height: 3rem;
-    }
-
-    .redes-svg {
-        width: 2.2rem;
-        height: 2.2rem;
     }
 
     .rede-sociais  {

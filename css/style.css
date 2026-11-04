@@ -36,3 +36,9 @@ body {
 section {
     padding: var(--espaco-secao);
 }
+
+@media (max-width: 1100px) {
+    section {
+        padding: 4rem 2rem;
+    }
+}

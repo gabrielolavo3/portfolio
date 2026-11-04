@@ -109,22 +109,10 @@
         gap: 3rem;
     }
 
-    .subtitulo-sobre-mim {
-        font-size: 1.18rem;
-    }
-
     .sobre-mim-svg {
         width: 1.5rem;
         height: 1.5rem;
         vertical-align: middle;
-    }
-
-    .container-descricao .nome {
-        font-size: 2.2rem;
-    }
-
-    .descricao-sobre {
-        font-size: 1.05rem;
     }
 
     .curriculo-btn {

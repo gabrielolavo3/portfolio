@@ -26,7 +26,8 @@ function fecharMenu() {
 botaoMenu.addEventListener('click', function () {
     if (menu.classList.contains('ativo')) {
         fecharMenu();
-    } else {
+    } 
+    else {
         abrirMenu();
     }
 });

@@ -1,7 +1,7 @@
 #contato {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 7.5rem; 
     width: 100%;
     background-color: var(--cor-fundo-header); 
