@@ -25,6 +25,7 @@
     height: 2.5rem;
     fill: var(--cor-fundo-header); 
     margin-right: 0.313rem;
+    vertical-align: middle;
 }
 
 .locais-estudos {
@@ -33,7 +34,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 4.3em;
-    padding: 2.2rem;
+    padding: 2.2rem 0;
 }
 
 #card-inverso {
@@ -117,7 +118,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 4.3em;
-        padding: 2.2rem;
+        padding: 2.2rem 0;
         width: 100%;
         margin: 0 auto;
     }
@@ -136,5 +137,18 @@
     .fachada-instituicao {
         height: auto; /*Ajusta a altura automaticamente */
     }
+}
 
+@media (max-width: 767px) {
+    #formacao .titulo-formacao {   
+        text-align: center;     
+        font-size: 1.8rem;
+    }
+
+    .formacao-svg {
+        display: none;
+        width: 1.5rem;
+        height: 1.5rem;    
+        margin-right: 0.200rem;    
+    }
 }

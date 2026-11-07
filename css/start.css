@@ -10,9 +10,9 @@
 .conteudo-inicio {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 7.5rem;
+    gap: 7.5rem;    
 }
 
 .imagem-perfil {
@@ -90,17 +90,55 @@
 
 /* Tablet */
 @media (max-width: 1100px) {
-    .imagem-perfil {
-        width: 50%;
+    .perfil {
+        display: flex;
+        justify-content: center;        
     }
-
+    
+     .imagem-perfil {
+        width: 45vw;
+    }
+ 
+    .saudacao {
+        font-size: 1.18rem;
+    }
+ 
+    .nome {
+        font-size: 3rem;
+    }
+ 
+    .cargo {
+        font-size: 1.20rem;
+    }
+ 
+    .descricao {
+        font-size: 1.18rem;
+    }
+ 
     .conteudo-inicio {                
         text-align: center;    
         flex-direction: column; 
         gap: 40px; 
     }
-
+ 
+    .icone-social {
+        border-radius: 3.2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+ 
+    .redes-svg {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+ 
     .rede-sociais  {
         justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {    
+     .imagem-perfil {
+        width: 70vw;
     }
 }

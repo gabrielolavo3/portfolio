@@ -1,5 +1,7 @@
 #projetos {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
     gap: 1.875rem;
@@ -59,7 +61,7 @@
 
 .carrosel-cards {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 2.5rem;
     padding: 0 1.25rem;
@@ -166,4 +168,104 @@
 
 .projetos-paginacao > .ativo {
     background-color: var(--cor-destaque);
+}
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+
+    /* Título com o mesmo tamanho que usei na seção de formação */
+    .titulo-projetos {
+        font-size: 1.9rem;
+    }
+
+    /* Tira a rolagem lateral e centraliza: seta, card e seta ficam no meio da tela */
+    .carrosel-cards {
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    /* Todos os cards ficam escondidos por padrão */
+    .card {
+        display: none;
+    }
+
+    /* Só o card com a classe "ativo" aparece. Volta para flex porque o .card original é flex */
+    .card.ativo {
+        display: flex;
+    }
+}
+
+/* Celular */
+
+@media (max-width: 767px) {
+    #projetos {
+        padding: 3.75rem 5%;
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
+    }
+
+    .titulo-projetos {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .projetos-svg {
+        display: none;
+    }
+
+    /* position: relative para as setas se prenderem ao carrossel.
+       padding embaixo cria o espaço onde as setas vão ficar.
+       padding dos lados em 0 para o card ocupar quase a largura toda.
+       overflow-x hidden tira a rolagem lateral */
+    .carrosel-cards {
+        position: relative;
+        padding: 0 0 4rem 0;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    .card {
+        display: none;
+    }
+
+    /* Só o card com a classe "ativo" aparece, na largura toda do carrossel.
+       height auto para o card crescer conforme o texto e nada ser cortado (o overflow é hidden) */
+    .card.ativo {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Imagem mais baixa para o card não ficar tão comprido */
+    .card > img {
+        height: 12.5rem;
+    }
+
+    /* Tecnologias centralizadas e com menos espaço entre elas */
+    .card > .container-tech {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    /* Tecnologias mais estreitas, para as 3 caberem na mesma linha */
+    .card > .container-tech > .techs {
+        width: 4.5rem;
+    }
+
+    /* As duas setas ficam no embaixo do carrossel (no espaço do padding) */
+    .seta-pag {
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* Seta da esquerda no primeiro terço */
+    .seta-esquerda {
+        left: 30%;
+    }
+
+    /* Seta da direita no último terço */
+    .seta-direita {
+        right: 30%;
+    }
 }

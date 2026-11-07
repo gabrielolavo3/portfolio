@@ -73,7 +73,7 @@
             <div class="conteudo-sobre-mim">
                 <div class="container-sobre-mim">
                     <figure class="perfil-sobre-mim">
-                        <img src="image/zelda.jpg" alt="Imagem de perfil" class="imagem-perfil foto2">
+                        <img src="image/zelda.jpg" alt="Imagem de perfil" class="imagem-perfil-sobre">
                     </figure>
                     <div class="container-descricao">
                         <div class="titulo-sobre-mim">
@@ -86,7 +86,7 @@
                             Sou estudante de Engenharia de Software pela <abbr title="Universidade Católica do Salvador">UCSal</abbr> e Técnico em Desenvolvimento de Sistemas pelo <abbr title="Serviço Nacional de Aprendizagem Industrial">SENAI</abbr> Bahia. Atualmente, tenho mergulhado nos meus projetos pessoais para colocar a teoria na prática. Meu foco principal tem sido o desenvolvimento back-end com Java, Spring Boot e MySQL, tentando cobrir tudo, desde rabiscar o modelo do banco até escrever o código da aplicação.
                             Em paralelo, também venho estudando como elaborar protótipos e construir interfaces com <strong class="texto"><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript</strong>.
                         </p>
-                        <a href="#" download="" class="curriculo-btn">
+                        <a href="curriculo.pdf" download="curriculo-gabriel-olavo.pdf" class="curriculo-btn">
                             Currículo <svg class="curriculo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 306.7L246.6 265.3C234.1 252.8 213.8 252.8 201.3 265.3C188.8 277.8 188.8 298.1 201.3 310.6L297.3 406.6C309.8 419.1 330.1 419.1 342.6 406.6L438.6 310.6C451.1 298.1 451.1 277.8 438.6 265.3C426.1 252.8 405.8 252.8 393.3 265.3L352 306.7L352 96zM160 384C124.7 384 96 412.7 96 448L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 448C544 412.7 515.3 384 480 384L433.1 384L376.5 440.6C345.3 471.8 294.6 471.8 263.4 440.6L206.9 384L160 384zM464 440C477.3 440 488 450.7 488 464C488 477.3 477.3 488 464 488C450.7 488 440 477.3 440 464C440 450.7 450.7 440 464 440z"/></svg>
                         </a>
                     </div>
@@ -140,10 +140,11 @@
             </div>
             
             <div class="carrosel-cards">
-                <button class="seta-pag">
+                <!-- seta-esquerda: o CSS prende essa seta na lateral esquerda do carrossel -->
+                <button class="seta-pag seta-esquerda">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M199.7 299.8C189.4 312.4 190.2 330.9 201.9 342.6L329.9 470.6C339.1 479.8 352.8 482.5 364.8 477.5C376.8 472.5 384.6 460.9 384.6 447.9L384.6 191.9C384.6 179 376.8 167.3 364.8 162.3C352.8 157.3 339.1 160.1 329.9 169.2L201.9 297.2L199.7 299.6z"/></svg>
                 </button>
-                <article class="card">
+                <article class="card ativo">
                     <img src="image/cinema.jpeg" alt="">
                     <h3>Cinema</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo lacus sed libero semper, a mollis eros pulvinar.</p>
@@ -171,7 +172,8 @@
                     </div>
                     <a href="" class="link-btn">Ver o Website</a>
                 </article>
-                <button class="seta-pag">
+                <!-- seta-direita: o CSS prende essa seta na lateral direita do carrossel -->
+                <button class="seta-pag seta-direita">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M441.3 299.8C451.5 312.4 450.8 330.9 439.1 342.6L311.1 470.6C301.9 479.8 288.2 482.5 276.2 477.5C264.2 472.5 256.5 460.9 256.5 448L256.5 192C256.5 179.1 264.3 167.4 276.3 162.4C288.3 157.4 302 160.2 311.2 169.3L439.2 297.3L441.4 299.7z"/></svg>
                 </button>
             </div>
@@ -179,8 +181,7 @@
             <div class="projetos-paginacao">
                 <span class="dot ativo"></span>
                 <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot"></span>                
             </div>
         </section>
 
@@ -288,7 +289,7 @@
                 <p>Quer conversar comigo? Basta preencher <br> os campos ao lado e eu entro em contato em breve.</p>
             </div>
             
-            <form action="#" method="POST">
+            <form action="#">
                 <div class="input">
                     <label for="assunto">Assunto</label>
                     <input type="text" id="assunto" class="input-dados" name="assunto" placeholder="Ex: Parceria em projeto" required>

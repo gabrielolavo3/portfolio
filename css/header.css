@@ -139,7 +139,7 @@ header {
         height: 100vh;        
         background-color: var(--cor-fundo-header); 
         padding: 6rem 2rem 2rem 2rem; 
-        z-index: 1000;
+        z-index: 1000;        
     }
 
     /* Classe auxiliar que você deve adicionar/remover via JavaScript ao clicar no botão */

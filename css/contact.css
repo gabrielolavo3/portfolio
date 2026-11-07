@@ -93,11 +93,13 @@ form button:hover {
         flex-direction: column;
     }
 
+    
+
     .container-contato {
         width: 100%;
     }
 
-    br {
+    .container-contato br {
         display: none;
     }
 
@@ -107,5 +109,30 @@ form button:hover {
         align-items: flex-start;
         gap: 1.25rem;
         width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #contato {
+        padding: 3.75rem 5%;
+        gap: 1.5rem;
+    }
+    
+    #titulo-contatos {
+        font-size: 1.8rem;
+    }
+
+    .email-svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .container-contato p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    form button {
+        font-size: 1rem;
     }
 }
