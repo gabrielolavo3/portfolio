@@ -1,7 +1,5 @@
-
 // DOM
 
-// Elementos do menu hamburguer
 const botaoMenu = document.querySelector('.menu-hamburguer');
 const menu = document.querySelector('.menu-horizontal');
 const iconeAtual = document.querySelector('.menu-icon');

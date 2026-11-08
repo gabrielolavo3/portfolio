@@ -1,7 +1,7 @@
 #contato {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 7.5rem; 
     width: 100%;
     background-color: var(--cor-fundo-header); 
@@ -92,8 +92,6 @@ form button:hover {
         gap: 30px;
         flex-direction: column;
     }
-
-    
 
     .container-contato {
         width: 100%;

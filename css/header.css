@@ -64,14 +64,14 @@ header {
     transform: translateY(-0.125rem); 
 }
 
-.modo-escuro-claro {
+.modo-escuro-claro {    
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     color: var(--cor-texto-header);
     font-size: 1.5rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     border: 0.0625rem solid var(--cor-texto-header);
