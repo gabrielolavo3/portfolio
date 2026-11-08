@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
     <title>Gabriel S. Olavo</title>
 </head>
 <body>
@@ -213,7 +215,7 @@
                         <img src="image/devicons/css.svg" alt="Logotipo do CSS3" title="CSS3" />
                         <p>CSS</p>
                     </div>
-                    <div class="icone-nome">
+                    <div class="icone-nome stack-maior">
                         <img src="image/devicons/javascript.svg" alt="Logotipo do JavaScript" title="JavaScript" />
                         <p>JavaScript</p>
                     </div>
@@ -289,7 +291,7 @@
                 <p>Quer conversar comigo? Basta preencher <br> os campos ao lado e eu entro em contato em breve.</p>
             </div>
             
-            <form action="#">
+            <form action="#" method="post" id="form-contato">
                 <div class="input">
                     <label for="assunto">Assunto</label>
                     <input type="text" id="assunto" class="input-dados" name="assunto" placeholder="Ex: Parceria em projeto" required>
@@ -306,7 +308,7 @@
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" class="input-dados" required></textarea>
                 </div>
-                <button type="submit">Enviar mensagem</button>
+                <button type="submit" id="enviar-btn">Enviar mensagem</button>
             </form>
         </section>
     </main>
@@ -319,6 +321,7 @@
         </a>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

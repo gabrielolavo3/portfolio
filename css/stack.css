@@ -50,7 +50,7 @@
 .container-stacks {
     border: 0.0625rem solid var(--cor-borda);
     display: flex;
-    align-items: center;    
+    align-items: stretch;  /* estica e acompanha a altura do elemento pai, mesmo quando os ícones quebram em mais linhas */
     gap: 3.75rem;
     border-radius: 1.5625rem;
     width: 100%;
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     text-align: left;
-    width: 45%;
+    width: 45%;    
     padding: 3%;
     border-radius: 1.5625rem;
     gap: 1.25rem;
@@ -69,7 +69,7 @@
 }
 
 .stack-frontend {
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-destaque);    
 }
 
 .stack-backend {
@@ -142,5 +142,15 @@
 
     .icones-stacks .icone-nome {
         width: 30%; /* 3 ícones por linha, todos do mesmo tamanho. O 4º já quebra para a linha de baixo */
+    }
+}
+
+@media (max-width: 767px) {
+    .icones-stacks .stack-maior {
+        width: 6.25rem;
+    }
+
+    .info-stack .icone-categoria {
+        width: 7rem;
     }
 }
