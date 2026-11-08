@@ -42,7 +42,7 @@
 }
 
 .seta-pag {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 2.8125rem;
@@ -152,7 +152,7 @@
 }
 
 .projetos-paginacao {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
@@ -180,6 +180,10 @@
         font-size: 1.9rem;
     }
 
+    .projetos-paginacao {
+        display: flex;
+    }
+
     /* Tira a rolagem lateral e centraliza: seta, card e seta ficam no meio da tela */
     .carrosel-cards {
         overflow-x: hidden;
@@ -193,6 +197,10 @@
 
     /* Só o card com a classe "ativo" aparece. Volta para flex porque o .card original é flex */
     .card.ativo {
+        display: flex;
+    }
+
+    .seta-pag {
         display: flex;
     }
 }
