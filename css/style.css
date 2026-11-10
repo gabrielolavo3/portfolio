@@ -43,46 +43,6 @@ section {
     }
 }
 
-.darkmode {
-    --bg-main: #1A1A1A;
-  
-  /* Fundo para seções alternadas (para não ficar tudo de uma cor só) */
-  --bg-secondary: #222222; 
-  
-  /* Fundo de Cards (Ex: Cards de Formação e Stacks) - Um pouco mais claro para dar profundidade */
-  --bg-card: #2A2A2A; 
-  
-  /* Fundo de Inputs e elementos aprofundados */
-  --bg-input: #121212; 
-
-  /* =========================================
-     2. Identidade da Marca (Brand Colors)
-     ========================================= */
-  /* Mantenha o seu azul original! Ele vai contrastar super bem com o fundo escuro */
-  --color-primary: var(--cor-destaque-hover); /* O azul da seção "Sobre mim" */
-  
-  /* Azul um pouco mais claro/vibrante para botões, links e hover (melhora a acessibilidade no escuro) */
-  --color-primary-light: #4A90E2; /* Ajuste para combinar com seu tom */
-
-  /* =========================================
-     3. Textos (Tipografia)
-     ========================================= */
-  /* Branco puro cansa a vista no fundo escuro. Use um off-white. */
-  --text-main: #E4E4E7; 
-  
-  /* Textos secundários (descrições de cards, subtítulos) */
-  --text-muted: #A1A1AA; 
-  
-  /* Texto em cima do fundo azul (Sobre mim, Rodapé) */
-  --text-on-primary: #FFFFFF; 
-
-  /* =========================================
-     4. Bordas e Detalhes
-     ========================================= */
-  /* Linhas divisórias e bordas de cards sutis */
-  --border-color: #3F3F46;
-}
-
 .darkmode #inicio,
 .darkmode #formacao,
 .darkmode #stack {
@@ -132,43 +92,3 @@ section {
 .darkmode .stack-ferramentas {
     background-color: var(--cor-fundo-header);
 }
-
-/*
-.darkmode #inicio,
-.darkmode #formacao,
-.darkmode #stack {
-    --cor-texto-header: #1D2935;
-    --cor-fundo-header: #e6e8ea; 
-}
-
-.darkmode #formacao .texto-instituicao {
-    --cor-borda: #e6e8ea;
-}
-
-.darkmode #stack {
-    background-color: var(--cor-texto-header);
-}
-
-.darkmode #projetos {
-    --cor-texto-header: #1D2935;
-    background-image: linear-gradient(to bottom, var(--cor-borda), var(--cor-texto-header));
-}
-
-.darkmode .card {
-    border: 0.0625rem solid var(--cor-borda);
-}
-
-.darkmode .instituicao,
-.darkmode .status-ensino,
-.darkmode .info-stack {
-    color: var(--cor-fundo-header);
-}
-
-.darkmode .info-stack .icone-categoria {
-    fill: var(--cor-fundo-header);
-}
-
-.darkmode .stack-ferramentas {
-    background-color: var(--cor-fundo-header);
-}
-*/
