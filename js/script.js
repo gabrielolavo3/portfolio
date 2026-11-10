@@ -179,3 +179,29 @@ document.getElementById("form-contato").addEventListener("submit", function (eve
             submitButton.disabled = false
         })
 })
+
+
+let darkmode = localStorage.getItem('darkmode')
+const temaBtn = document.querySelector('.modo-escuro-claro')
+
+const enableDarkmode = () => {
+    document.body.classList.add('darkmode')
+    document.body.style.backgroundColor = "#222222";
+    localStorage.setItem('darkmode', 'active')
+    
+}
+
+const disableDarkmode = () => {
+    document.body.classList.remove('darkmode')
+    document.body.style.backgroundColor = "#e6e8ea";
+    localStorage.setItem('darkmode', null)
+}
+
+if (darkmode === "active") {
+    enableDarkmode()
+}
+
+temaBtn.addEventListener('click', () => {
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+})

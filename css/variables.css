@@ -5,10 +5,10 @@
     --fonte-secundaria: 'Sintony', sans-serif;
     
     --cor-fundo-header: #242525;
-    --cor-texto-header: #ffffff;
+    --cor-texto-header: #e6e8ea;
     --cor-destaque: #1880c1;
     --cor-destaque-hover: #126396;
-    --cor-borda: #526271;
+    --cor-borda: #526271;    
 
     /* Variável para padronizar o espaçamento de todas as seções */
     --espaco-secao: 6.25rem 8%;

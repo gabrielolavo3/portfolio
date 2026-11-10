@@ -71,23 +71,28 @@ header {
     cursor: pointer;
     color: var(--cor-texto-header);
     font-size: 1.5rem;
-    display: none;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    border: 0.0625rem solid var(--cor-texto-header);
+    justify-content: center;    
     border-radius: 3.2rem;
-    width: 2.8rem;
-    height: 2.8rem;
 }
 
 .modo-escuro-claro .page-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    fill: var(--cor-borda);
+    width: 1.85rem;
+    height: 1.85rem;
+    fill: var(--cor-texto-header);
 }
 
-.modo-escuro-claro:hover {
-    color: var(--cor-destaque); 
+.modo-escuro-claro .page-icon:last-child {
+    display: none;
+}
+
+.darkmode .modo-escuro-claro .page-icon:first-child {
+    display: none;
+}
+
+.darkmode .modo-escuro-claro .page-icon:last-child {
+    display: block;
 }
 
 /* Responsividade */

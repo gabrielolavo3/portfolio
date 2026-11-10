@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     gap: 3.125rem;
+    background-color: var(--cor-texto-header);
 }
 
 .container-titulos-stack {
