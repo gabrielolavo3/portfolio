@@ -1,0 +1,55 @@
+.darkmode #inicio,
+.darkmode #formacao,
+.darkmode #stack {
+    --cor-texto-header: #222222;
+    --cor-fundo-header: #e6e8ea; 
+}
+
+.darkmode #sobre-mim .curriculo-btn {
+    --cor-fundo-header: #e6e8ea; 
+    --cor-texto-header: #222222;
+    --cor-borda: #A1A1AA;    
+}
+
+.darkmode #sobre-mim .curriculo-btn:hover {
+    --cor-texto-header: #e6e8ea;
+    --cor-destaque: #222222; 
+}
+
+.darkmode .instituicao,
+.darkmode .status-ensino,
+.darkmode .texto-instituicao {
+    color: #e6e8ea;
+}
+
+.darkmode #projetos {
+    background-image: linear-gradient(to bottom, #126396, #222222);
+}
+
+.darkmode .card {
+    --cor-fundo-header: #E4E4E7;
+    --cor-texto-header: #222222;
+}
+
+.darkmode .seta-pag {
+    --cor-fundo-header: #E4E4E7;
+    --cor-texto-header: #126396;
+    fill: #E4E4E7;
+}
+
+.darkmode .link-btn {
+    --cor-texto-header: #1A1A1A;
+}
+
+.darkmode .subtitulo-stack,
+.darkmode .descricao-stack {
+    color: #acacb6;
+}
+
+.darkmode .stack-backend {
+    background-color: #b3b3b5;
+}
+
+.darkmode .stack-ferramentas {
+    background-color: var(--cor-fundo-header);
+}

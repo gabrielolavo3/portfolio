@@ -46,6 +46,7 @@
     font-weight: 500;
     color: var(--cor-borda);
     font-size: 1rem;    
+    text-align: justify;
 }
 
 .container-stacks {

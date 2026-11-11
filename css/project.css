@@ -48,6 +48,7 @@
     width: 2.8125rem;
     height: 2.8125rem;
     border: 0.1875rem solid var(--cor-fundo-header);
+    cursor: pointer;
     border-radius: 50%;
     background-color: var(--cor-texto-header);
     color: var(--cor-destaque-hover);
