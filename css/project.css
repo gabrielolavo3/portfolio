@@ -172,11 +172,52 @@
     background-color: var(--cor-destaque);
 }
 
+/* Desktop menor*/
+@media (max-width: 1370px) {
+    .titulo-projetos {
+        font-size: 1.9rem;
+    }
+
+    .carrosel-cards {
+        gap: 2rem;
+        align-items: stretch; /* Ajusta o tamanho dos elementos filhos conforme o espaço na tela */
+        overflow-x: hidden;
+    }
+
+    /* flex-shrink: 0 impede o card de ser espremido. Ele
+       mesmo fica menor e os elementos dentro diminuem junto */
+    .card {
+        width: 20rem;
+        height: auto; /* A altura é ajustada automaticamente */
+        flex-shrink: 0;
+    }
+
+    .card > img {
+        height: 13rem;
+    }
+
+    .card > h3 {
+        font-size: 1.1rem;
+    }
+
+    .card > p {
+        font-size: 0.85rem;
+    }
+
+    .card > .container-tech > .techs {
+        width: 4.6rem;
+        height: 1.6rem;
+        font-size: 0.85rem;
+    }
+
+    .link-btn {
+        padding: 0.5rem 1.1rem;
+        font-size: 0.9rem;
+    }
+}
+
 /* Tablet */
-
 @media (max-width: 1100px) {
-
-    /* Título com o mesmo tamanho que usei na seção de formação */
     .titulo-projetos {
         font-size: 1.9rem;
     }
@@ -188,10 +229,10 @@
     /* Tira a rolagem lateral e centraliza: seta, card e seta ficam no meio da tela */
     .carrosel-cards {
         overflow-x: hidden;
+        align-items: center;
         justify-content: center;
     }
 
-    /* Todos os cards ficam escondidos por padrão */
     .card {
         display: none;
     }
@@ -207,7 +248,6 @@
 }
 
 /* Celular */
-
 @media (max-width: 767px) {
     #projetos {
         padding: 3.75rem 5%;
@@ -232,7 +272,7 @@
         position: relative;
         padding: 0 0 4rem 0;
         overflow-x: hidden;
-        justify-content: center;
+        justify-content: center;        
     }
 
     .card {
@@ -247,18 +287,15 @@
         height: auto;
     }
 
-    /* Imagem mais baixa para o card não ficar tão comprido */
     .card > img {
         height: 12.5rem;
     }
 
-    /* Tecnologias centralizadas e com menos espaço entre elas */
     .card > .container-tech {
         justify-content: center;
         gap: 0.5rem;
     }
 
-    /* Tecnologias mais estreitas, para as 3 caberem na mesma linha */
     .card > .container-tech > .techs {
         width: 4.5rem;
     }

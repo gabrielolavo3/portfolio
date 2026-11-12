@@ -123,7 +123,31 @@
     height: 3.5rem;
 }
 
-/* Tablet e telas menores: empilha o bloco de texto e os ícones */
+/* Desktop menor */
+@media (max-width: 1370px) {
+    .container-titulos-stack .titulo-stack {
+        font-size: 1.9rem;
+    }
+
+    .container-stacks {
+        gap: 3rem;
+    }
+
+    .info-stack  {
+        width: 40%; 
+    }
+
+    .icones-stacks .icone-nome {
+        padding: 0.75rem;
+    }
+
+    .icone-nome img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* Tablet */
 @media (max-width: 1100px) {
      .container-stacks {
         flex-direction: column;
@@ -132,9 +156,18 @@
         gap: 1.5rem;
     }
 
+    .container-stacks .titulo-stack {
+        font-size: 2.1rem;
+    }
+
     .info-stack {
         width: 100%;
         padding: 1.5rem;
+    }
+
+    .icone-nome img {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     .icones-stacks {
@@ -144,10 +177,12 @@
     }
 
     .icones-stacks .icone-nome {
-        width: 30%; /* 3 ícones por linha, todos do mesmo tamanho. O 4º já quebra para a linha de baixo */
+        width: 30%;
+        padding: 0.9375rem;
     }
 }
 
+/* Celular */
 @media (max-width: 767px) {
     .icones-stacks .stack-maior {
         width: 6.25rem;

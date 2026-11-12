@@ -108,6 +108,27 @@
     color: var(--cor-borda);
 }
 
+/* Desktop menor */
+@media (max-width: 1370px) {
+    .titulo-formacao {
+        font-size: 1.9rem;
+    }
+
+    .locais-estudos {
+        gap: 3rem;
+    }
+
+    .descricao-estudo h3 {
+        font-size: 1.5rem;
+    }
+
+    .texto-instituicao {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+/* Tablet */
 @media (max-width: 1100px) {    
     .titulo-formacao {        
         font-size: 2.2rem;        
@@ -127,6 +148,11 @@
     .descricao-estudo h3 {
         font-size: 1.5rem;
     }
+        
+    .texto-instituicao {
+        font-size: 1.05rem;
+        line-height: 1.9;
+    }
 
     /* Em coluna, a figura volta a ocupar a largura toda */
     .locais-estudos figure {
@@ -140,6 +166,7 @@
     }
 }
 
+/* Celular */
 @media (max-width: 767px) {
     #formacao .titulo-formacao {   
         text-align: center;     

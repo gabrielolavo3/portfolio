@@ -1,7 +1,7 @@
 #contato {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 7.5rem; 
     width: 100%;
     background-color: var(--cor-fundo-header); 
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    width: 40%;
+    width: 40%;    
 }
 
 .email-svg {
@@ -87,6 +87,27 @@ form button:hover {
     background-color: var(--cor-destaque);
 }
 
+/* Desktop menor */
+@media (max-width: 1370px) {
+    .email-svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #titulo-contatos {
+        font-size: 2.2rem;
+    }
+
+    .container-contato {
+        width: 45%;
+    }
+
+    form {        
+        width: 50%;
+    }
+}
+
+/* Tablet */
 @media (max-width: 1100px) {
     #contato {
         gap: 30px;
@@ -101,6 +122,15 @@ form button:hover {
         display: none;
     }
 
+    .email-svg {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    #titulo-contatos {
+        font-size: 2.5rem;
+    }
+
     form {
         display: flex;
         flex-direction: column;
@@ -110,6 +140,7 @@ form button:hover {
     }
 }
 
+/* Celular */
 @media (max-width: 767px) {
     #contato {
         padding: 3.75rem 5%;

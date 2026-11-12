@@ -89,6 +89,43 @@
     background-color: var(--cor-fundo-header);
 }
 
+/* Desktop menor (1370px) */
+@media (max-width: 1370px) {
+    .conteudo-inicio {
+        gap: 4rem; /* 7.5rem espremia o texto; aproxima a imagem do texto */
+    }
+
+    .imagem-perfil {
+        width: 28vw; /* imagem diminui junto com o texto */
+    }
+
+    .saudacao {
+        font-size: 1.1rem;
+    }
+
+    .nome {
+        font-size: 3.2rem; /* texto diminui na mesma proporção da imagem */
+    }
+
+    .cargo {
+        font-size: 1.3rem;
+    }
+
+    .descricao {
+        font-size: 1.1rem;
+    }
+
+    .icone-social {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .redes-svg {
+        width: 2.3rem;
+        height: 2.3rem; /* ícone acompanha o tamanho do círculo */
+    }
+}
+
 /* Tablet */
 @media (max-width: 1100px) {
     .perfil {

@@ -40,6 +40,22 @@ footer a:hover {
     border: 0.25rem solid var(--cor-fundo-header);
 }
 
+/* Desktop menor */
+@media (max-width: 1370px) {
+    footer {
+        padding: 1rem 3rem;
+    }
+
+    footer .footer-titulo {        
+        font-size: 1.15rem;        
+    }
+
+    footer .copyright {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablet */
 @media (max-width: 1100px) {
     footer {
         padding: 0.5rem 2rem;
@@ -61,6 +77,7 @@ footer a:hover {
     }
 }
 
+/* Celular */
 @media (max-width: 767px) {
     footer {
         padding: 0.80rem;        
