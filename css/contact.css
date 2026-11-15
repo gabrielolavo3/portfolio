@@ -70,6 +70,20 @@ textarea {
     height: 7.5rem;
 }
 
+.erro {
+    color: #e63946;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.invalido {
+    border: 1px solid #e63946;
+}
+
+.valido {
+    border: 1px solid #2a9d8f;
+}
+
 form button {
     width: 100%;
     padding: 0.9375rem;

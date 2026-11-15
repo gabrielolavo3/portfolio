@@ -134,7 +134,7 @@
     }
 
     .info-stack  {
-        width: 40%; 
+        width: 40%;         
     }
 
     .icones-stacks .icone-nome {
@@ -144,6 +144,16 @@
     .icone-nome img {
         width: 3rem;
         height: 3rem;
+    }
+
+    .info-stack .icone-categoria {
+        width: 3.5rem;        
+        height: 3.5rem;        
+    }
+
+    .info-stack .icone-tools {
+        width: 3.2rem;
+        height: 3.2rem;
     }
 }
 
@@ -178,7 +188,7 @@
 
     .icones-stacks .icone-nome {
         width: 30%;
-        padding: 0.9375rem;
+        padding: 0.9375rem;        
     }
 }
 
@@ -188,7 +198,8 @@
         width: 6.25rem;
     }
 
-    .info-stack .icone-categoria {
-        width: 7rem;
+    .info-stack .icone-categoria svg {
+        width: 2.5rem;        
+        height: 2.5rem;
     }
 }
