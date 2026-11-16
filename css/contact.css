@@ -70,6 +70,12 @@ textarea {
     height: 7.5rem;
 }
 
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
+
 .erro {
     color: #e63946;
     font-size: 12px;
