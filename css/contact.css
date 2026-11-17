@@ -71,8 +71,7 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
-    outline: 2px solid var(--cor-destaque);
+textarea:focus {    
     border-color: var(--cor-destaque);
 }
 
